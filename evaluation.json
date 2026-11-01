@@ -1,0 +1,24 @@
+{
+  "model": "Milestone I Bag-of-Words + MultinomialNB, refitted from supplied artifacts",
+  "train_reviews": 15729,
+  "test_reviews": 3933,
+  "vocabulary_size": 7529,
+  "accuracy": 0.8680396643783371,
+  "precision": 0.9258441148627328,
+  "recall": 0.9117464263517713,
+  "f1": 0.9187411930483795,
+  "roc_auc": 0.9050002825018363,
+  "confusion_matrix": [
+    [
+      480,
+      235
+    ],
+    [
+      284,
+      2934
+    ]
+  ],
+  "seed": 42,
+  "count_vector_parity_reviews": 19662,
+  "note": "Preserves Milestone I corpus-wide vocabulary and split. Vocabulary was derived before splitting, so this is reproduction, not a leakage-free new evaluation."
+}

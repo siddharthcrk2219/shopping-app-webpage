@@ -1,0 +1,77 @@
+datasetNo,indexOfdf,Id,ColumnName,Original,Modified,ErrorType,Fixing
+dataset1,241,REV197016,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,721,REV266156,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,980,REV671656,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,1024,REV251796,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,1307,REV636137,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,1318,REV777211,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,1481,REV466443,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,1738,REV707135,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,2049,REV951833,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,2250,REV267228,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,2287,REV951209,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,2309,REV559911,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,2356,REV294191,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,2420,REV634438,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,2742,REV510096,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,2775,REV327012,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,2989,REV669731,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,3806,REV934019,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,4629,REV553990,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,4687,REV210916,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,4997,REV877306,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,5273,REV710113,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,5557,REV503157,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,5943,REV510623,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,6307,REV894227,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,6385,REV765933,Review Title,,No title provided,Missing Value,Blank review title standardised to 'No title provided'.
+dataset1,293,REV347782,Customer Rating,2.0,2,Invalid Format,Recognisable rating format converted to an integer from 1 to 5.
+dataset1,378,REV548459,Customer Rating,5 stars,5,Invalid Format,Recognisable rating format converted to an integer from 1 to 5.
+dataset1,3212,REV561442,Customer Rating,01,1,Invalid Format,Recognisable rating format converted to an integer from 1 to 5.
+dataset1,4256,REV993141,Customer Rating,Rating: 4,4,Invalid Format,Recognisable rating format converted to an integer from 1 to 5.
+dataset1,4522,REV184534,Customer Rating,four,4,Invalid Format,Recognisable rating format converted to an integer from 1 to 5.
+dataset1,6058,REV501829,Customer Rating,3/5,3,Invalid Format,Recognisable rating format converted to an integer from 1 to 5.
+dataset1,3062,REV694516,Positive Review Count,1 review,1,Invalid Format,Text representation converted to numeric count.
+dataset1,3066,REV710237,Positive Review Count,5 reviews,5,Invalid Format,Text representation converted to numeric count.
+dataset1,1063,REV991838,Online Time,00:03:30,210,Invalid Format,Time representation converted to seconds.
+dataset1,3352,REV180178,Online Time,"1,200",1200,Invalid Format,Time representation converted to seconds.
+dataset1,5285,REV539460,Online Time,120 sec,120,Invalid Format,Time representation converted to seconds.
+dataset1,5487,REV462679,Online Time,2 min,120,Invalid Format,Time representation converted to seconds.
+dataset1,90,REV107238,Age,-1,37,Incorrect Value,Invalid age replaced using the median age of the corresponding age group.
+dataset1,913,REV244647,Age,,51,Incorrect Value,Invalid age replaced using the median age of the corresponding age group.
+dataset1,1237,REV875535,Age,,37,Incorrect Value,Invalid age replaced using the median age of the corresponding age group.
+dataset1,1265,REV808396,Age,0,37,Incorrect Value,Invalid age replaced using the median age of the corresponding age group.
+dataset1,1649,REV739735,Age,,26,Incorrect Value,Invalid age replaced using the median age of the corresponding age group.
+dataset1,1858,REV172318,Age,,26,Incorrect Value,Invalid age replaced using the median age of the corresponding age group.
+dataset1,1889,REV440151,Age,,26,Incorrect Value,Invalid age replaced using the median age of the corresponding age group.
+dataset1,1907,REV308748,Age,,51,Incorrect Value,Invalid age replaced using the median age of the corresponding age group.
+dataset1,2768,REV249103,Age,999,51,Incorrect Value,Invalid age replaced using the median age of the corresponding age group.
+dataset1,3030,REV433487,Age,,37,Incorrect Value,Invalid age replaced using the median age of the corresponding age group.
+dataset1,3561,REV504169,Age,,51,Incorrect Value,Invalid age replaced using the median age of the corresponding age group.
+dataset1,5525,REV964857,Age,,37,Incorrect Value,Invalid age replaced using the median age of the corresponding age group.
+dataset1,6272,REV159148,Age,,37,Incorrect Value,Invalid age replaced using the median age of the corresponding age group.
+dataset1,6359,REV819791,Age,150,37,Incorrect Value,Invalid age replaced using the median age of the corresponding age group.
+dataset1,726,REV124571,Cost,,93.72,Outlier/Invalid Value,Invalid cost replaced using the median valid cost for the same ClothID.
+dataset1,922,REV565533,Cost,0,71.54,Outlier/Invalid Value,Invalid cost replaced using the median valid cost for the same ClothID.
+dataset1,2713,REV403648,Cost,,72.72,Outlier/Invalid Value,Invalid cost replaced using the median valid cost for the same ClothID.
+dataset1,3127,REV711131,Cost,,42.2,Outlier/Invalid Value,Invalid cost replaced using the median valid cost for the same ClothID.
+dataset1,4086,REV127186,Cost,,75.43,Outlier/Invalid Value,Invalid cost replaced using the median valid cost for the same ClothID.
+dataset1,4368,REV142926,Cost,,48.89,Outlier/Invalid Value,Invalid cost replaced using the median valid cost for the same ClothID.
+dataset1,4612,REV831258,Cost,-1,94.49,Outlier/Invalid Value,Invalid cost replaced using the median valid cost for the same ClothID.
+dataset1,4840,REV465662,Cost,,80.22,Outlier/Invalid Value,Invalid cost replaced using the median valid cost for the same ClothID.
+dataset1,5156,REV132196,Cost,9999,76.18,Outlier/Invalid Value,Invalid cost replaced using the median valid cost for the same ClothID.
+dataset1,5590,REV232780,Cost,,91.47,Outlier/Invalid Value,Invalid cost replaced using the median valid cost for the same ClothID.
+dataset1,5704,REV864623,Cost,,73.64,Outlier/Invalid Value,Invalid cost replaced using the median valid cost for the same ClothID.
+dataset1,6094,REV471378,Cost,unknown,72.49,Outlier/Invalid Value,Invalid cost replaced using the median valid cost for the same ClothID.
+dataset1,6100,REV918876,Cost,-1,97.48,Outlier/Invalid Value,Invalid cost replaced using the median valid cost for the same ClothID.
+dataset1,316,REV243419,ClothID,0,ROW DELETED,Integrity Constraint Violation,ClothID must be positive and no reliable replacement could be determined.
+dataset1,3298,REV261239,Section,General Petitte,General Petite,Misspelling,Obvious Section spelling error corrected.
+dataset1,5952,REV616884,Section,Genral,General,Misspelling,Obvious Section spelling error corrected.
+dataset1,570,REV737817,Department,Top,Tops,Misspelling,Obvious Department spelling error corrected.
+dataset1,1382,REV432028,Department,Dressess,Dresses,Misspelling,Obvious Department spelling error corrected.
+dataset1,6288,REV663833,Department,Dressess,Dresses,Misspelling,Obvious Department spelling error corrected.
+dataset1,1391,REV723793,Category,Kntis,Knits,Misspelling,Obvious Category spelling error corrected.
+dataset1,3736,REV530604,Category,Jens,Jeans,Misspelling,Obvious Category spelling error corrected.
+dataset1,6045,REV173460,Category,Dressess,Dresses,Misspelling,Obvious Category spelling error corrected.
+dataset1,ALL,ALL,"Reviewer_Age_Group,Recommendation_Label",ALL,COLUMN REMOVED,Redundant Helper Columns,Helper columns were used for validation/imputation but are not part of the required output schema.
+dataset1,ALL,ALL,ReviewID,ALL,COLUMN REMOVED,Audit Identifier,ReviewID was retained during auditing for record-level traceability but is not part of the required Task 2 schema.

@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ p.title }} · Thread & Form
+{% endblock %}
+
+{% block content %}
+    <p class="crumb">
+        <a href="{{ url_for('home') }}">All clothing</a>
+        /
+        <a href="{{ url_for(
+            'home',
+            department=p.department,
+            category=p.category
+        ) }}">
+            {{ p.category }}
+        </a>
+        / #{{ p.id }}
+    </p>
+
+    <section class="product">
+        <div class="art">
+            {% set photo_group = (
+                'dress' if p.department == 'Dresses'
+                else 'bottom' if p.department == 'Bottoms'
+                else 'top'
+            ) %}
+
+            {% set photo_number = (p.id % 2) + 1 %}
+
+            <img
+                src="{{ url_for(
+                    'static',
+                    filename='images/' ~ photo_group ~ '-' ~ photo_number ~ '.jpg'
+                ) }}"
+                alt="Illustrative {{ p.category }} photograph"
+                onerror="this.onerror=null;this.src='{{ url_for('static', filename='top.svg') }}';"
+            >
+        </div>
+
+        <div>
+            <p class="eyebrow">
+                {{ p.division }} / {{ p.department }} / {{ p.category }}
+            </p>
+
+            <h1>{{ p.title }}</h1>
+
+            <p>
+                ★ {{ p.average }} / 5 · {{ p.count }} original reviews
+            </p>
+
+            <p class="description">
+                {{ p.description }}
+            </p>
+
+            <p class="muted">
+                Clothing ID {{ p.id }} · Image for illustrative purposes
+            </p>
+
+            <a
+                class="button"
+                href="{{ url_for('new_review', pid=p.id) }}"
+            >
+                Write a review →
+            </a>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <h2>From the community</h2>
+
+        {% for r in reviews %}
+            <article>
+                <span class="pill">NEW REVIEW</span>
+
+                <h3>
+                    <a href="{{ url_for('review', rid=r.id) }}">
+                        {{ r.title }}
+                    </a>
+                </h3>
+
+                <p>
+                    ★ {{ r.rating }} / 5 ·
+                    {{ 'Recommended' if r.recommended else 'Not recommended' }}
+                </p>
+
+                <p>{{ r.body }}</p>
+
+                <small>
+                    {{ r.created }} UTC ·
+                    <a href="{{ url_for('review', rid=r.id) }}">
+                        Permanent review link ↗
+                    </a>
+                </small>
+            </article>
+        {% endfor %}
+
+        {% for r in originals %}
+            <article>
+                <h3>
+                    {{ r['Title'] or 'Customer review' }}
+                </h3>
+
+                <p>
+                    ★ {{ r['Rating'] }} / 5 ·
+                    {{ 'Recommended' if r['Recommended IND'] == '1'
+                        else 'Not recommended' }}
+                </p>
+
+                <p>
+                    {{ r['Review Text'] or 'No written review provided.' }}
+                </p>
+
+                <small>Original dataset review</small>
+            </article>
+        {% endfor %}
+
+        <div class="pagination">
+            {% if page > 1 %}
+                <a href="{{ url_for(
+                    'detail',
+                    pid=p.id,
+                    page=page-1
+                ) }}">
+                    ← Previous
+                </a>
+            {% endif %}
+
+            <span>
+                Original reviews: page {{ page }} of {{ pages }}
+            </span>
+
+            {% if page < pages %}
+                <a href="{{ url_for(
+                    'detail',
+                    pid=p.id,
+                    page=page+1
+                ) }}">
+                    Next →
+                </a>
+            {% endif %}
+        </div>
+    </section>
+{% endblock %}
